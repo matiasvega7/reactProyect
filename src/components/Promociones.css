@@ -1,0 +1,25 @@
+.promo-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.promo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.promo-card {
+  width: 200px;
+  padding: 1rem;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.promo-card img {
+  width: 100%;
+  border-radius: 4px;
+}

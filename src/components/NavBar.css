@@ -1,13 +1,19 @@
 
-.header{
-    display:flex;
-   background-color: darkslategrey;
-    width:100%;
-    height: 160px;
-    position: static;
-  }
-  
-  
+.header {
+  display: flex;
+  width: 100%;
+  height: 145px;
+  background-color: #388e3c;
+}
+
+
+.dropdown-header {
+  color: #c8d1ca;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  font-weight: bold;
+  border-bottom: 1px solid #444444;
+}
   
   .logo {
     width: 100px;
@@ -39,92 +45,152 @@
   }
   
  
-      .nav-bar {
-        display: flex;
-        justify-content:space-around;
-        text-align: center;
-        align-items: center;
-        gap: 2rem; 
-        padding: 1rem;
-      }
-      
-      .nav-link {
-        
-        text-decoration: none;
-        color: #efe7e7;
-        font-size: 1.2rem;
-        font-weight: bold;
-        transition: color 0.3s ease;
-      }
-      
-      .nav-link:hover {
-        color: #4a8be0; 
-      }
 
-      .plantas-container {
-        padding: 2rem;
-        text-align: center;
-      }
+.dropdown {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 5px;
+}
+
+
+.dropbtn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #131313;
+  min-width: 160px;
+  z-index: 1;
+  border-radius: 4px;
+  box-shadow: 0px 8px 16px 0px rgba(171, 171, 171, 0.2);
+  padding: 0.5rem 0;
+}
+
+
+.dropdown-item {
+  color: white;
+  padding: 0.5rem 1rem;
+  display: block;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.dropdown-item:hover {
+  background-color: #555;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.dropdown:hover .dropbtn {
+  color: #ddd;
+}
+
+
+.plantas-container {
+    padding: 2rem;
+    text-align: center;
+    text-decoration: #131313;
+    background-color: #bfbfc2aa;
+
+}
+.plantas-container:hover{
+  background-color: #c2c1c1;
+  cursor: pointer;
+}
       
-      .galeria {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 2rem;
-        margin-top: 2rem;
-      }
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
       
-      .card {
-        background-color: #ffffff;
-        border-radius: 12px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-        transition: transform 0.3s ease;
-        padding: 1rem;
-      }
-      
-      .card:hover {
-        transform: scale(1.03);
-      }
-      
-      .img-card {
-        width: 100%;
-        height: 180px;
-        object-fit: cover;
-        border-radius: 10px;
-      }
-      
-      .planta {
-        color: #efe7e7;
-        font-size: 2rem;
-        margin: 0.8rem 0 0.4rem;
-      }
-      
-      .p {
-        font-size: 1.2rem;
-        color: #555555eb;
-        margin-bottom: 0.5rem;
-      }
-      
-      .span {
-        display:contents;
     
-        font-weight: bold;
-        color: #3a863d;
-        margin-bottom: 0.8rem;
+
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    padding: 1rem;
+}
       
-      }
+.card:hover {
+    transform: scale(1.03);
+}
       
-      .btn-agregar {
-        background-color: #4caf50;
-        color: white;
-        border: none;
-        padding: 0.6rem 1rem;
-        border-radius: 6px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-      }
+.img-card {
+    width: 100px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
       
-      .btn-agregar:hover {
-        background-color: #388e3c;
-      }
       
+.p {
+  font-size: 1.2rem;
+  color: #0d0101eb;
+  margin-bottom: 0.5rem;
+}
+
+      
+
+
+.botonMas{
+    background-color: green;
+    color: aliceblue;
+    padding: 4px 5px;
+}
+
+.botonMas:hover{
+   background-color: #045f2eaa;
+}
+  
+.botonMenos{
+    background-color:red;
+    color: aliceblue;
+    padding: 4px 5px;
+ }
+.botonMenos:hover{
+   background-color: rgb(97, 3, 3);
+}
+
+.btn-agregar {
+   background-color: #4caf50;
+   color: white;
+   border: none;
+   padding: 0.6rem 1rem;
+   border-radius: 6px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+      
+.btn-agregar:hover {
+  background-color: #388e3c;
+}
+
+.btn-carrito{
+   background-color: #4caf50;
+   color: white;
+    border: none;
+   padding: 0.6rem 1rem;
+   border-radius: 6px;
+   cursor: pointer;
+    transition: background-color 0.3s ease;
+ }
+.btn:hover{
+  background-color: #38653a;
+ }
