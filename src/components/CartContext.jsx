@@ -34,3 +34,4 @@ export const CartProvider = ({ children }) => {
     </CartContext.Provider>
   );
 };
+

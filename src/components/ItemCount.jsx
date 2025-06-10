@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
 import { toast } from "react-toastify";
 
-const ItemCount = ({ onAdd }) => {
-  const [count, setCount] = useState(0);
+const ItemCount = ({ stock, onAdd }) => {
+  const [cantidad, setCantidad] = useState(1);
 
-  const sumar = () => {
-    setCount(count + 1);
+  const aumentar = () => {
+    if (cantidad < stock) setCantidad(cantidad + 1);
   };
 
-  const restar = () => {
-    setCount(Math.max(0, count - 1));
+  const disminuir = () => {
+    if (cantidad > 1) setCantidad(cantidad - 1);
   };
 
   const agregarCarrito = () => {
-    if (count > 0) {
-      toast.success(`Agregaste ${count} producto(s) al carrito`);
-      onAdd(count); 
+    if (cantidad > 0) {
+      toast.success(`Agregaste ${cantidad} producto(s) al carrito`);
+      onAdd(cantidad);
     } else {
       toast.error('Debes agregar al menos 1 unidad');
     }
@@ -24,11 +24,16 @@ const ItemCount = ({ onAdd }) => {
   return (
     <div>
       <div>
-        <button className='botonMenos' onClick={restar}>-</button>
-        <span style={{ margin: '0 1rem' }}>{count}</span>
-        <button className='botonMas' onClick={sumar}>+</button>
+        <button className='botonMenos' onClick={disminuir}>-</button>
+        <span style={{ margin: '0 1rem' }}>{cantidad}</span>
+        <button className='botonMas' onClick={aumentar}>+</button>
       </div>
-      <button className='btn-agregar' onClick={agregarCarrito}>
+      <button
+        className='btn-agregar'
+        onClick={agregarCarrito}
+        disabled={stock === 0}
+        style={{ marginTop: '1rem' }}
+      >
         Agregar al carrito
       </button>
     </div>
@@ -36,3 +41,4 @@ const ItemCount = ({ onAdd }) => {
 };
 
 export default ItemCount;
+

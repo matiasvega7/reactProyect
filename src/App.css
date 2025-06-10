@@ -33,6 +33,29 @@ body{
 
     }
 
+.greeting{
+   display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 40px;
+  text-shadow: #181616 3px 2px;
+  animation: colorChange  3s infinite;
+}
+
+  @keyframes colorChange {
+      0% {
+        color: rgb(255, 255, 255);
+      }
+      50% {
+        color: rgb(110, 232, 175);
+      }
+      100% {
+        color: rgb(47, 228, 19);
+      }
+
+    }
+
 
 
  

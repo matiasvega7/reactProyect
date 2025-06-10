@@ -15,7 +15,7 @@ function NavBar() {
             </a>
           </div>
         <div>
-          <Link className="dropbtn" to="/">Home</Link>
+          <Link  className="dropbtn" to="/productos">Productos</Link>
         </div>
           <div>
             <button className="dropbtn">Tipos de planta ▼</button>
@@ -30,7 +30,7 @@ function NavBar() {
           <div>
           <Link className="dropbtn" to="/promociones">Promociones</Link>
           </div>
-        <Link to="/cart"><CartWidget/></Link>
+        <Link className="dropbtn" to="/cart"><CartWidget/></Link>
         </nav>
       </header>
     </>

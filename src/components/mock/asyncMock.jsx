@@ -5,6 +5,7 @@ const tiposDePlantas = [
     descripcion: 'Mix de suculentas',
     categoria: 'suculentas',
     precio: 500,
+    stock: 20,
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ const tiposDePlantas = [
     descripcion: 'Suculentas de interior',
     categoria: 'suculentas',
     precio: 600,
+    stock: 17,
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ const tiposDePlantas = [
     descripcion: 'Suculentas de exterior',
     categoria: 'suculentas',
     precio: 700,
+    stock: 10,
   },
   {
     id: 4,
@@ -26,6 +29,7 @@ const tiposDePlantas = [
     descripcion: 'Zinias',
     categoria: 'florales',
     precio: 800,
+    stock: 13,
   },
   {
     id: 5,
@@ -33,6 +37,7 @@ const tiposDePlantas = [
     descripcion: 'Mariposa Azul',
     categoria: 'florales',
     precio: 950,
+    stock: 4,
   },
   {
     id: 6,
@@ -40,6 +45,7 @@ const tiposDePlantas = [
     descripcion: 'Espada de San Jorge',
     categoria: 'interiores',
     precio: 1200,
+    stock: 13,
   },
   {
     id: 7,
@@ -47,6 +53,7 @@ const tiposDePlantas = [
     descripcion: 'Monstera',
     categoria: 'interiores',
     precio: 1700,
+    stock: 5,
   },
   {
     id: 8,
@@ -54,6 +61,7 @@ const tiposDePlantas = [
     descripcion: 'Tronco de Brasil',
     categoria: 'interiores',
     precio: 1900,
+    stock: 8,
   }
 ];
 
